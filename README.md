@@ -65,8 +65,7 @@ add_principal identifier.fivem:YYYY group.mod
 
 | Command | Permission | Description |
 |---------|-----------|-------------|
-| `/density` | None (menu requires admin/mod) | Opens the density control menu (no args) or shows status (with any arg) |
-| `/densityadmin` | Admin/Mod only | Server-side command to open the menu (ACE-restricted) |
+| `/density` | Admin/Mod only | Server-side command to open the menu (ACE-restricted) |
 
 ## API Exports
 
