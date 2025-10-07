@@ -75,6 +75,14 @@ end)
 --- Handle setting updates from clients
 ---@param settings DensitySettings
 RegisterNetEvent('qbx_density:saveSettings', function(settings)
+    local src = source
+    
+    if not (IsPlayerAceAllowed(tostring(src), 'group.admin') or
+            IsPlayerAceAllowed(tostring(src), 'group.mod') or
+            IsPlayerAceAllowed(tostring(src), 'command.density')) then
+        return
+    end
+        
     if not settings then return end
 
     -- Validate settings
